@@ -1,0 +1,135 @@
+
+/* responsive 1500px start */
+@media (max-width:1500px) {
+    
+}
+
+/* responsive 1500px end */
+
+
+/* responsive 1400px start */
+@media (max-width:1200px) {
+    
+}
+/* responsive 1400px end */
+
+
+/* responsive 1200px start */
+@media (max-width:1200px) {
+    .banner {
+        padding: 140px 0;
+    }
+    .notice h3 {
+        margin: 52px 91px 16px 33px;
+    }
+    .services p {
+        padding: 0 15px;
+    }
+    .services{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+/* responsive 1200px end */
+
+
+/* responsive 992px start */
+@media (max-width:992px) {
+    .header-left {
+        text-align: center;
+        padding: 11px 0;
+    }
+    .text-right {
+        text-align: center !important;
+        padding-left: 0;
+    }
+    .about-content img{
+        margin-bottom: 20px;
+    }
+    .services h3 {
+        font-size: 17px;
+    }
+    .services p {
+        padding: 0 10px;
+    }
+}
+/* responsive 992px end */
+.header-right span{
+    display: none;
+}
+
+/* responsive 768px start */
+@media (max-width:768px) {
+    .header-left {
+        text-align: left;
+        padding: 11px 0;
+        width: 50%;
+    }
+    .header-right ul {
+        display: none;
+    }
+    .header-right{
+        position: relative;
+    }
+    .header-right span {
+        font-size: 35px;
+        position: absolute;
+        top: -61px;
+        right: 3px;
+        color: #fff;
+        display: block;
+    }
+    .banner h1 {
+        width: 461px;
+        padding: 7px 20px;
+        font-size: 40px;
+        margin-top: 15px;
+    }
+    .banner {
+        padding: 70px 0;
+    }
+    .notice h3 {
+        text-align: center;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .about-content ul {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
+/* responsive 768px end */
+
+
+/* responsive 576px start */
+@media (max-width:576px) {
+    .banner {
+        padding: 0;
+    }
+    .banner h2 {
+        padding: 17px;
+        margin-bottom: 0;
+        border: 0;
+        width: 100%;
+    }
+    .banner h1 {
+        width: 100%;
+        font-size: 32px;
+        margin-top: 0;
+        border: 0;
+    }
+    .text-muted {
+        font-size: 12px;
+    }
+    .banner h2:hover {
+        transform: none;
+    }
+    .banner h1:hover {
+        transform: none;
+    }
+    .about h2:hover {
+        letter-spacing: 0;
+        transform: none;
+    }
+}
+/* responsive 576px end */
