@@ -1,4 +1,14 @@
 
+
+/* normal css  */
+#humbergur{
+    display: none;
+}
+.header-right .span{
+    display: none;
+    cursor: pointer;
+}
+
 /* responsive 1500px start */
 @media (max-width:1500px) {
     
@@ -54,9 +64,7 @@
     }
 }
 /* responsive 992px end */
-.header-right span{
-    display: none;
-}
+
 
 /* responsive 768px start */
 @media (max-width:768px) {
@@ -66,12 +74,23 @@
         width: 50%;
     }
     .header-right ul {
-        display: none;
+        width: 180px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #2990DB;
+        z-index: 999;
+        visibility: hidden;
+        opacity: 1;
+        transition: .3s;
+        transform: translateY(20px);
     }
-    .header-right{
-        position: relative;
+    .header-right ul li{
+        display: block;
+        line-height: 45px;
+        margin: 0;
     }
-    .header-right span {
+    .header-right .span {
         font-size: 35px;
         position: absolute;
         top: -61px;
@@ -79,6 +98,25 @@
         color: #fff;
         display: block;
     }
+    .header-right #humbergur:checked ~ ul {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .header-right #humbergur:checked ~ .span {
+        display: none;
+    }
+    .header-right .span2{
+        display: none;
+    }
+    .header-right #humbergur:checked ~ .span2 {
+        display: block;
+    }
+
+    .header-right{
+        position: relative;
+    }
+
     .banner h1 {
         width: 461px;
         padding: 7px 20px;
@@ -104,19 +142,21 @@
 /* responsive 576px start */
 @media (max-width:576px) {
     .banner {
-        padding: 0;
+        padding: 30px;
     }
     .banner h2 {
-        padding: 17px;
-        margin-bottom: 0;
+        padding: 11px 0;
+        margin-bottom: 20px;
         border: 0;
-        width: 100%;
+        width: 79%;
+        font-size: 28px;
     }
     .banner h1 {
-        width: 100%;
+        width: 85%;
         font-size: 32px;
         margin-top: 0;
         border: 0;
+        font-size: 25px;
     }
     .text-muted {
         font-size: 12px;
@@ -131,5 +171,6 @@
         letter-spacing: 0;
         transform: none;
     }
+
 }
 /* responsive 576px end */
